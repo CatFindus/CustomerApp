@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: CustomerApp
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DB_USER:admin}
+    password: ${DB_PASS:admin}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:db/changelog/changelog.xml
+    enabled: true
+    default-schema: customer_management
+    liquibase-schema: customer_management_migrations
+server:
+  port: 8585
+springdoc:
+  swagger-ui:
+    path: /swagger/swagger-ui.html
