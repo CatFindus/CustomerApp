@@ -6,7 +6,7 @@ Customer CRUD Application - это CRUD приложение, с БД PostgreSQL
 ## Эндпоинты
 - **Customer Service**: Управление кастомерами и их контактами.
   - http://localhost:8585/swagger/swagger-ui/index.html
-![img.png](img.png)
+
 ## Технологии
 - Spring Boot
 - PostgreSQL
